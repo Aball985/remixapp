@@ -2,6 +2,20 @@
 
 - [Remix Docs](https://remix.run/docs)
 
+
+## Tech Stack
+
+**Client:** Remix, TailwindCSS
+
+**Server:** Remix App server, Express, Prisma, Vercel
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
 ## Development
 
 From your terminal:
