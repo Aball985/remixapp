@@ -1,15 +1,19 @@
+import type { LinksFunction } from "remix";
 import {
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
+
 import type { MetaFunction } from "remix";
 
+import tailwindStylesUrl from "./tailwind.css";
+
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Fullstack Tailwind" };
 };
 
 export default function App() {
@@ -30,3 +34,18 @@ export default function App() {
     </html>
   );
 }
+
+//Handles all url style references or package
+export const links: LinksFunction = () => {
+  return [
+    {
+      //Modern CSS Reset
+      rel: "stylesheet",
+      href: "https://unpkg.com/modern-css-reset/dist/reset.min.css",
+    },
+    {
+      rel: "stylesheet",
+      href: tailwindStylesUrl,
+    },
+  ];
+};
