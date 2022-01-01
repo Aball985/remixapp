@@ -39,10 +39,11 @@ export default function App() {
 export const links: LinksFunction = () => {
   return [
     {
-      //Modern CSS Reset
+      // Modern CSS Reset
       rel: "stylesheet",
       href: "https://unpkg.com/modern-css-reset/dist/reset.min.css",
     },
+    // Tailwind CSS Styling
     {
       rel: "stylesheet",
       href: tailwindStylesUrl,
