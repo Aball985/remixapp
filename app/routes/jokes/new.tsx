@@ -18,11 +18,7 @@ export default function NewJokesRoute() {
           </label>
         </div>
         <div>
-          <button
-            type="submit"
-            onClick={handleSubmit}
-            className="button"
-          >
+          <button type="submit" onClick={handleSubmit} className="button">
             Add
           </button>
         </div>

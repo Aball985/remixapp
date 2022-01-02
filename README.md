@@ -2,12 +2,11 @@
 
 - [Remix Docs](https://remix.run/docs)
 
-
 ## Tech Stack
 
-**Client:** Remix, TailwindCSS
+**Client:** Remix, TailwindCSS, React Icons
 
-**Server:** Remix App server, Express, Prisma, Vercel
+**Server:** Planetscale, Express, Prisma, Vercel, Redis
 
 ## Features
 
