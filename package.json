@@ -3,6 +3,9 @@
   "name": "remix-app-template",
   "description": "",
   "license": "",
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "tailwind:build": "npm run build:css && remix build",
     "tailwind:build:css": "tailwindcss -o ./app/tailwind.css",
@@ -15,6 +18,7 @@
     "start": "remix-serve build"
   },
   "dependencies": {
+    "@prisma/client": "^3.7.0",
     "@remix-run/react": "^1.1.1",
     "@remix-run/serve": "^1.1.1",
     "react": "^17.0.2",
@@ -26,6 +30,8 @@
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "concurrently": "^6.5.1",
+    "esbuild-register": "^3.3.1",
+    "prisma": "^3.7.0",
     "tailwindcss": "^3.0.8",
     "typescript": "^4.1.2"
   },
